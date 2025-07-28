@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: linear-gradient(135deg, #1a1a2e, #162447, #2a1a3d);
+  --foreground: #e0e0e0;
 }
 
 @theme inline {
@@ -20,7 +20,37 @@
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
 }
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(2px 2px at 25px 35px, rgba(88, 166, 255, 0.4), transparent),
+    radial-gradient(2px 2px at 45px 75px, rgba(121, 192, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 85px 45px, rgba(166, 225, 255, 0.3), transparent),
+    radial-gradient(1px 1px at 125px 85px, rgba(64, 158, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 155px 115px, rgba(201, 203, 207, 0.2), transparent);
+  background-repeat: repeat;
+  background-size: 170px 110px;
+  animation: float 22s linear infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(-25px) translateX(12px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+
