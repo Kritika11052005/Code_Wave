@@ -57,12 +57,7 @@
 The project is deployed on **Vercel**:  
 👉 [https://code-wave.vercel.app](https://code-wave.vercel.app)
 
-To deploy your own version:
 
-1. Push the project to a GitHub repository.
-2. Go to [vercel.com/import](https://vercel.com/import) and import your repo.
-3. Select **Next.js** as the framework.
-4. Click **Deploy** 🚀
 
 ---
 
@@ -73,17 +68,7 @@ To deploy your own version:
 - 🧠 AI-powered code suggestions using OpenAI API
 - ❗ Inline syntax error highlighting and diagnostics
 
----
 
-## 🤝 Contributing
-
-Contributions are welcome and appreciated!
-
-1. **Fork** the repository
-2. **Create a branch**: `git checkout -b feature/your-feature`
-3. **Commit your changes**: `git commit -m "Add new feature"`
-4. **Push to the branch**: `git push origin feature/your-feature`
-5. **Open a Pull Request`
 
 ---
 
@@ -93,4 +78,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## 👩‍💻 Built with ❤️ by Kritika Benjwal & Team
+## 👩‍💻 Built with ❤️ by Kritika Benjwal
