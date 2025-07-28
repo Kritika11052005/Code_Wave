@@ -1,8 +1,10 @@
 # 🎧 code_wave
 
+
+
 **code_wave** is a fast, minimal, and powerful in-browser code editor that supports multiple programming languages with real-time execution. Built with performance and simplicity in mind, it provides developers with a playground to write, test, and customize code — right in the browser.
 
-🌐 [Live Demo on Vercel](https://code-wave.vercel.app)
+🌐 [Live Demo on Vercel](https://code-wave-indol.vercel.app/)
 
 ---
 
