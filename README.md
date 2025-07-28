@@ -1,10 +1,18 @@
-# 🎧 code_wave
+# 🎧 Code_Wave
 
 
 
-**code_wave** is a fast, minimal, and powerful in-browser code editor that supports multiple programming languages with real-time execution. Built with performance and simplicity in mind, it provides developers with a playground to write, test, and customize code — right in the browser.
+![hi-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/acad04d8-fecc-42ae-b6f9-affdce33fd61)
 
-🌐 [Live Demo on Vercel](https://code-wave-indol.vercel.app/)
+
+# Website Front Page
+<img width="1896" height="923" alt="image" src="https://github.com/user-attachments/assets/d384f888-9d13-4202-a0af-6404d149093a" />
+
+
+
+**Code_Wave** is a fast, minimal, and powerful in-browser code editor that supports multiple programming languages with real-time execution. Built with performance and simplicity in mind, it provides developers with a playground to write, test, and customize code — right in the browser.
+
+🌐 [Live Demo on Vercel](https://code-wave-puce.vercel.app/)
 
 ---
 
