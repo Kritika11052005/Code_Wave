@@ -6,22 +6,23 @@ import { User } from "lucide-react";
 
 function HeaderProfileBtn() {
     return (
-        <>
-            <UserButton>
-                <UserButton.MenuItems>
-                    <UserButton.Link
-                        label="Profile"
-                        labelIcon={<User className="size-4" />}
-                        href="/profile"
-                    />
-                </UserButton.MenuItems>
-            </UserButton>
+    <div className="flex items-center gap-3">
+        <UserButton>
+            <UserButton.MenuItems>
+                <UserButton.Link
+                    label="Profile"
+                    labelIcon={<User className="size-4" />}
+                    href="/profile"
+                />
+            </UserButton.MenuItems>
+        </UserButton>
 
-            <SignedOut>
-
+        <SignedOut>
+            <div className="flex items-center">
                 <LoginButton />
-            </SignedOut>
-        </>
-    );
+            </div>
+        </SignedOut>
+    </div>
+);
 }
 export default HeaderProfileBtn;
