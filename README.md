@@ -50,12 +50,7 @@
 - **Themes & Font Size**: Managed via Zustand and `localStorage`
 - **Code Persistence**: Per-language code is auto-saved locally
 
----
 
-## 📦 Deployment
-
-The project is deployed on **Vercel**:  
-👉 [https://code-wave.vercel.app](https://code-wave.vercel.app)
 
 
 
