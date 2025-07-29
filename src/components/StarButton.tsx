@@ -24,7 +24,18 @@ function StarButton({ snippetId }: { snippetId: Id<"snippets"> }) {
     if (!isSignedIn) return; // If not signed in, do nothing
     await star({ snippetId }); // Call Convex mutation to star/unstar the snippet
   };
-
+ // ✅ FIX: Wait until query values are loaded
+  if (isStarred === undefined || starCount === undefined) {
+    return (
+      <button
+        disabled
+        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-500/10 text-gray-400"
+      >
+        <Star className="w-4 h-4 fill-none" />
+        <span className="text-xs font-medium text-gray-400">...</span>
+      </button>
+    );
+  }
   return (
     <button
       onClick={handleStar}

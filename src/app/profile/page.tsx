@@ -116,6 +116,7 @@ function ProfilePage() {
               {/* ====================== EXECUTIONS TAB ====================== */}
               {activeTab === "executions" && (
                 <div className="space-y-6">
+                
                   {executions?.map((execution) => (
                     <div
                       key={execution._id}
@@ -127,7 +128,13 @@ function ProfilePage() {
                           {/* Language image */}
                           <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur opacity-20 group-hover:opacity-30" />
-                            <Image src={`/${execution.language}.png`} alt="" width={40} height={40} className="rounded-lg relative z-10" />
+                            <Image
+                              src={"/" + execution.language + ".png"}
+                              alt=""
+                              className="rounded-lg relative z-10 object-cover"
+                              width={40}
+                              height={40}
+                            />
                           </div>
                           {/* Language and time info */}
                           <div className="space-y-1">

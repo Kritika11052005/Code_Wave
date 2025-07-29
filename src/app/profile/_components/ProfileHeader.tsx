@@ -46,16 +46,16 @@ function ProfileHeader({ userStats, userData, user }: ProfileHeaderProps) {
   // Define all the stats we want to display
   const STATS = [
     {
-      label: "Languages Used", // Main heading
-      value: userStats?.languageCount ?? 0, // fallback if data is undefined
-      icon: Code2, // Icon shown
-      color: "from-purple-500 to-pink-500", // Gradient color
-      gradient: "group-hover:via-purple-400",
-      description: "Different languages", // Smaller description
+      label: "Code Executions",
+      value: userStats?.totalExecutions ?? 0,
+      icon: Activity,
+      color: "from-blue-500 to-cyan-500",
+      gradient: "group-hover:via-blue-400",
+      description: "Total code runs",
       metric: {
-        label: "Most used", // Secondary stat
-        value: userStats?.favoriteLanguage ?? "N/A",
-        icon: TrendingUp,
+        label: "Last 24h",
+        value: userStats?.last24hours ?? 0,
+        icon: Timer,
       },
     },
     {
@@ -72,7 +72,7 @@ function ProfileHeader({ userStats, userData, user }: ProfileHeaderProps) {
       },
     },
     {
-      label: "Languages Used", // This entry is duplicated - you can remove it
+      label: "Languages Used", 
       value: userStats?.languageCount ?? 0,
       icon: Code2,
       color: "from-purple-500 to-pink-500",
